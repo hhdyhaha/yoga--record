@@ -9,7 +9,13 @@ export default function Index () {
 
   return (
     <View className='index'>
-      <Text>Index Page！</Text>
+      {/* 分为头部，内容 */}
+      <View className='header'>
+        <Text>头部</Text>
+      </View>
+      <View className='content'>
+        <Text>内容</Text>
+      </View>
     </View>
   )
 }

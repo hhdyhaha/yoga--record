@@ -1,6 +1,6 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import { AtCalendar } from "taro-ui"
+import { View } from '@tarojs/components'
+import Taro, { useLoad } from '@tarojs/taro'
+import { AtCalendar,AtButton } from "taro-ui"
 
 import './index.scss'
 
@@ -8,6 +8,13 @@ export default function Index() {
   useLoad(() => {
     console.log('Page loaded.')
   })
+
+  // 记录练习
+  const handleRecordPractice = () => {
+    Taro.switchTab({
+      url: '/pages/record/index',
+    })
+  }
 
   return (
     <View className='index'>
@@ -21,6 +28,11 @@ export default function Index() {
         {/* 日历 */}
         <View className='calendar'>
           <AtCalendar />
+        </View>
+
+        {/* 按钮 */}
+        <View className='button'>
+          <AtButton circle onClick={handleRecordPractice}>按钮</AtButton>
         </View>
       </View>
     </View>

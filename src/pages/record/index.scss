@@ -9,7 +9,7 @@
   background-color: #fff;
 
   .taroify-cell__title {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 500;
     color: #323233;
   }
@@ -59,7 +59,7 @@
 
 .action-tag {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 26px;
   background-color: #f5f5f5;
   border-radius: 999px;
   color: #323233;
@@ -80,7 +80,7 @@
   width: 100%;
   min-height: 120px;
   padding: 12px 0;
-  font-size: 16px;
+  font-size: 26px;
   border: none;
   background-color: transparent;
 }
@@ -96,9 +96,7 @@
 }
 
 .save-button {
-  height: 48px;
-  line-height: 48px;
   border-radius: 24px;
-  font-size: 16px;
+  font-size: 26px;
   background: linear-gradient(to right, #8675a9, #9f8ac1) !important;
 }

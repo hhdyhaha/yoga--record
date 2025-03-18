@@ -1,6 +1,8 @@
 import { View, Text, Picker } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
-import { Form, Cell, Button, Slider, Textarea, Toast } from "@taroify/core"
+import { Form, Cell, Slider, Textarea, Toast } from "@taroify/core"
+import { AtButton } from "taro-ui"
+
 import { useState } from 'react'
 import Taro from '@tarojs/taro'
 
@@ -138,9 +140,9 @@ export default function Record() {
       </Form>
       
       <View className="submit-button-wrapper">
-        <Button color="primary" size="large" className="save-button" onClick={handleSubmit}>
+        <AtButton className="save-button" onClick={handleSubmit}>
           保存记录
-        </Button>
+        </AtButton>
       </View>
     </View>
   )
